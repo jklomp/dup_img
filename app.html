@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>check for duplicate images</title>
+    <meta name="author" content="jcjk">
+    <meta name="description" content="check if images in a directory have duplicates in another directory">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="script.js"></script>
+    <script src="worker.js"></script>
+</head>
+
+<style>
+    body {
+        margin-left:25px;
+        font-family:arial;
+        font-size:14px;
+    }
+    #haydir, #needledir {
+        min-width: 150px;
+        border: 1px solid lightgray;
+        height:18px;
+        padding-left:3px;
+        padding-right:3px;
+        padding-top:2px;
+    }
+    #butstart {
+        font-size:20px;
+        width:120px;
+        height:40px;
+    }
+    .td1 {
+            border-bottom:1px solid lightgray;
+            vertical-align: top;
+    }
+</style>
+
+<body onload="init()">
+    <!--<input type='button' value="devtools" onclick="openDevtools()"/>
+    <input type='button' value="reload" onclick="reload()"/>-->
+    <br>
+    <br>
+    <h3>Check if images in the needle directory tree have duplicates in the hay directory tree</h3>
+    <br>
+    <table>
+    <tr>
+        <td>needle directory</td><td><div id='needledir'></div></td><td><input type="button" onclick = "needleclick()" /></td>
+    </tr>
+    <tr>
+        <td>hay directory</td><td><div id='haydir'></div></td><td><input type="button" onclick="hayclick()" /></td>
+    </tr>
+    </table>
+    <br>
+    <input id='butstart' type='button' value="start check" onclick="startcheck()"/>
+    <br>
+    <br>
+    <div id="result-div">
+
+    </div>
+</body>
+</html>
