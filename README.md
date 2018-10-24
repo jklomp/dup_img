@@ -1,5 +1,5 @@
 # dup_img
-##Find duplicate images
+## Find duplicate images
 
 This electron program is intended to compare a directory tree containing images (the needle tree images) with another tree containing images (the hay tree images). For instance if you have a sd-card from your camera and you are not sure if all images are transferred to your hard disk, you can use this program to check.
 Results are shown in the user interface HTML file.
